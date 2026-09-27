@@ -1,3 +1,14 @@
+## 🌐 Live Demo
+
+### Frontend
+[🚀 TripCraft AI — Live Application](https://tripcraft-ai-snowy.vercel.app)
+
+### Backend
+[⚙️ TripCraft AI — FastAPI Backend](https://tripcraft-ai-8u78.onrender.com)
+
+### API Documentation
+[📚 FastAPI Swagger Documentation](https://tripcraft-ai-8u78.onrender.com/docs)
+
 ## AI-Assisted Development
 
 AI coding assistants were used as part of the development process for TripCraft AI.
