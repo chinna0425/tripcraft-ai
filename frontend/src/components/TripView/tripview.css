@@ -1,0 +1,181 @@
+.trip-view {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.trip-progress {
+	padding: 18px 20px;
+	background: #ffffff;
+	border: 1px solid #e4e8ef;
+	border-radius: 16px;
+	box-shadow: 0 5px 20px rgba(23, 32, 51, 0.04);
+}
+
+.trip-progress > div:first-child {
+	display: flex;
+	align-items: baseline;
+	gap: 7px;
+	margin-bottom: 12px;
+}
+
+.trip-progress strong {
+	font-size: 18px;
+	font-weight: 800;
+	color: #172033;
+}
+
+.trip-progress span {
+	font-size: 13px;
+	color: #737d8f;
+}
+
+.trip-progress .progress-bar {
+	width: 100%;
+	height: 8px;
+	overflow: hidden;
+	border-radius: 999px;
+	background: #e9edf3;
+}
+
+.trip-progress .progress-value {
+	height: 100%;
+	border-radius: inherit;
+	background: #172033;
+	transition: width 0.35s ease;
+}
+
+.trip-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	padding: 26px 28px;
+	background: #ffffff;
+	border: 1px solid #e4e8ef;
+	border-radius: 18px;
+	box-shadow: 0 7px 24px rgba(23, 32, 51, 0.05);
+}
+
+.trip-eyebrow {
+	margin: 0 0 8px;
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: 1.4px;
+	color: #7a8495;
+}
+
+.trip-header h2 {
+	margin: 0;
+	max-width: 760px;
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: -0.6px;
+	color: #172033;
+}
+
+.trip-header > div:first-child > p:last-child {
+	margin: 10px 0 0;
+	font-size: 15px;
+	color: #697386;
+}
+
+.trip-meta {
+	flex-shrink: 0;
+	padding: 9px 13px;
+	border: 1px solid #dce2eb;
+	border-radius: 10px;
+	background: #f7f9fc;
+	font-size: 13px;
+	font-weight: 700;
+	color: #4d586b;
+}
+
+.days-list {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+@media (max-width: 768px) {
+	.trip-header {
+		padding: 22px;
+		border-radius: 16px;
+	}
+
+	.trip-header h2 {
+		font-size: 26px;
+	}
+
+	.trip-meta {
+		padding: 8px 11px;
+	}
+}
+
+@media (max-width: 600px) {
+	.trip-view {
+		gap: 14px;
+	}
+
+	.trip-progress {
+		padding: 15px 16px;
+		border-radius: 14px;
+	}
+
+	.trip-progress > div:first-child {
+		margin-bottom: 10px;
+	}
+
+	.trip-progress strong {
+		font-size: 16px;
+	}
+
+	.trip-progress span {
+		font-size: 12px;
+	}
+
+	.trip-progress .progress-bar {
+		height: 7px;
+	}
+
+	.trip-header {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 14px;
+		padding: 20px 18px;
+		border-radius: 14px;
+	}
+
+	.trip-header h2 {
+		font-size: 24px;
+		line-height: 1.25;
+	}
+
+	.trip-header > div:first-child > p:last-child {
+		margin-top: 8px;
+		font-size: 14px;
+	}
+
+	.trip-meta {
+		font-size: 12px;
+	}
+
+	.days-list {
+		gap: 14px;
+	}
+}
+
+@media (max-width: 380px) {
+	.trip-header {
+		padding: 17px 15px;
+	}
+
+	.trip-header h2 {
+		font-size: 21px;
+	}
+
+	.trip-eyebrow {
+		font-size: 10px;
+	}
+}
