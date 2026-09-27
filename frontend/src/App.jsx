@@ -87,8 +87,6 @@ const App = () => {
 
 		const currentPrompt = prompt.trim();
 
-		setPrompt("");
-
 		try {
 			const data = await generateTrip(currentPrompt, controller.signal);
 
