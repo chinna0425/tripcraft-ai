@@ -1,6 +1,6 @@
 import DayCard from "../DayCard/DayCard";
 import "./tripview.css";
-function TripView({ trip, onTripChange }) {
+const TripView = ({ trip, onTripChange }) => {
 	if (!trip) {
 		return null;
 	}
@@ -81,6 +81,6 @@ function TripView({ trip, onTripChange }) {
 			</div>
 		</section>
 	);
-}
+};
 
 export default TripView;

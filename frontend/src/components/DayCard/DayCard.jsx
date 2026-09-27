@@ -3,7 +3,7 @@ import { useState } from "react";
 import StopCard from "../StopCard/StopCard";
 import "./daycard.css";
 
-function DayCard({ day, onDayChange }) {
+const DayCard = ({ day, onDayChange }) => {
 	const [isExpanded, setIsExpanded] = useState(true);
 
 	function handleStopChange(updatedStop) {
@@ -121,6 +121,6 @@ function DayCard({ day, onDayChange }) {
 			)}
 		</article>
 	);
-}
+};
 
 export default DayCard;

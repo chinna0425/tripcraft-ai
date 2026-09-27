@@ -5,7 +5,7 @@ import { generateTrip, refineTrip } from "./services/tripApi";
 import RefinementBox from "./components/RefinementBox/RefinementBox";
 import "./App.css";
 
-function normalizeTrip(trip) {
+const normalizeTrip = (trip) => {
 	return {
 		...trip,
 
@@ -18,9 +18,9 @@ function normalizeTrip(trip) {
 			})),
 		})),
 	};
-}
+};
 
-function preserveCompletedState(previousTrip, updatedTrip) {
+const preserveCompletedState = (previousTrip, updatedTrip) => {
 	const completedStops = new Map();
 
 	previousTrip.days.forEach((day) => {
@@ -42,9 +42,9 @@ function preserveCompletedState(previousTrip, updatedTrip) {
 			})),
 		})),
 	};
-}
+};
 
-function App() {
+const App = () => {
 	const [prompt, setPrompt] = useState("");
 
 	const [trip, setTrip] = useState(null);
@@ -199,6 +199,6 @@ function App() {
 			{trip && <RefinementBox onRefine={handleRefine} loading={isRefining} />}
 		</main>
 	);
-}
+};
 
 export default App;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./refinement.css";
 
-function RefinementBox({ onRefine, loading }) {
+const RefinementBox = ({ onRefine, loading }) => {
 	const [instruction, setInstruction] = useState("");
 	const [lastInstruction, setLastInstruction] = useState("");
 	const [refinementError, setRefinementError] = useState("");
@@ -91,6 +91,6 @@ function RefinementBox({ onRefine, loading }) {
 			)}
 		</section>
 	);
-}
+};
 
 export default RefinementBox;

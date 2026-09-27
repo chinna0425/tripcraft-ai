@@ -1,3 +1,20 @@
+## AI-Assisted Development
+
+AI coding assistants were used as part of the development process for TripCraft AI.
+
+I used AI tools such as ChatGPT and GitHub Copilot in Vscode to:
+
+- Explore and discuss the application architecture and implementation approach.
+- Get guidance while building the React frontend and FastAPI backend.
+- Debug errors and understand unexpected runtime and API behavior.
+- Improve error handling, validation, and frontend state-management logic.
+- Review and refine UI components and CSS.
+- Help write and improve project documentation.
+
+The AI tools were used as development assistants, not as a replacement for understanding or testing the implementation. I reviewed, modified, integrated, and tested the generated suggestions within the project.
+
+The application, architecture, integration, and final implementation were developed and verified as part of this project, and I am prepared to explain and extend the code during an interview.
+
 # TripCraft AI
 
 > An AI-powered travel itinerary planner that converts a user's natural-language travel request into a structured, interactive and customizable day-by-day itinerary.

@@ -1,6 +1,6 @@
 import "./stopcard.css";
 
-function StopCard({
+const StopCard = ({
 	stop,
 	index,
 	totalStops,
@@ -8,13 +8,13 @@ function StopCard({
 	onRemove,
 	onMoveUp,
 	onMoveDown,
-}) {
-	function handleComplete() {
+}) => {
+	const handleComplete = () => {
 		onChange({
 			...stop,
 			completed: !stop.completed,
 		});
-	}
+	};
 
 	return (
 		<div className={stop.completed ? "stop-card completed" : "stop-card"}>
@@ -55,6 +55,6 @@ function StopCard({
 			</div>
 		</div>
 	);
-}
+};
 
 export default StopCard;
